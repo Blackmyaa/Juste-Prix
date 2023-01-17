@@ -1,0 +1,22 @@
+body {
+    background: url('../../image/juste-prix.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+h1,
+h2,
+input {
+    text-align: center;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+#Proposition,#prop,#nbr-essai{     margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+
+}

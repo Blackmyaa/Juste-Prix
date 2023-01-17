@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le juste Prix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1>Devinez quel est le bon prix</h1>
+        <h2>Vous avez 10 essais</h2>
+    </header>
+
+    <main class="mt-2">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 mx-auto">
+                    <div class="" id="objet"></div>
+                    <div class="bg-light" id="nomObjet"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-lg-5 mt-2 bg-light" id="prop">
+                    Entrez une proposition entre 1 et 100
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5 mt-2 bg-light" id="Proposition">
+                    Quelle est votre proposition?
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mx-auto mt-2">
+                    <input type="number" min="0" max="100" class="form-control" id="proposition" placeholder="(0-100)">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row col-4 mx-auto">
+                <div class="bg-light text-center text-danger mt-2" id="nbr-essai"></div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 mx-auto text-center mt-2">
+            <button type="submit" class="btn btn-secondary mb-3" id="bouton">Valider la proposition</button>
+        </div>
+
+
+        <div class="row">
+            <div id="message2" class="col-lg-4 mx-auto text-center bg-danger text-white"></div>
+        </div>
+        <div class="row">
+            <div id="message" class="col-lg-4 mx-auto text-center bg-danger text-white invisible"></div>
+        </div>
+
+        <div class="row col-md-1 col-lg-1 col-4 mx-auto mt-2 text-white">
+            <button onClick="window.location.reload();" class="bg-danger text-white mb-3 rounded"
+                id="restart">Restart</button>
+        </div>
+    </main>
+
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/justeprix.js"></script>
+</body>
+
+</html>
